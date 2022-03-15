@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.childelements h2{
+  margin-left:4%;
+  font-size:140%;
+}
+.heightof{
+  height:70vh;
+}
+
+.letspace{
+  word-spacing:-0.3vw;
+}
+
+
+.container{
+  position:absolute;
+  margin-left:10%;
+  width:80%;
+  height:40%;
+  background-color:transparent;
+  overflow:hidden;
+  display:flex;
+  flex-direction:row;
+}
+.backings{
+  animation:backs 1s linear;
+  animation-fill-mode:forwards;
+}
+@keyframes backs{
+  100%{
+    transform: translateX(-125%);
+  }
+}
+
+
+
+.baseposition{
+  transform:translateX(0);
+}
+
+
+/*for next steps*/
+.next1step{
+  animation:finals 0.8s linear;
+  animation-fill-mode:forwards;
+}
+@keyframes finals{
+  100%{
+    transform: translateX(-125%);
+  }
+}
+
+.next2step{
+  animation:finals2 0.8s linear;
+  transform:translateX(-125%);
+  animation-fill-mode:forwards;
+}
+@keyframes finals2{
+  100%{
+    transform: translateX(-250%);
+  }
+}
+
+.next3step{
+  animation:nextone 0.8s linear;
+  transform:translateX(-250%);
+  animation-fill-mode:forwards;
+}
+@keyframes nextone{
+  100%{
+    transform: translateX(-350%);
+  }
+}
+
+.next4step{
+  animation:nextone2 0.8s linear;
+  transform:translateX(-350%);
+  animation-fill-mode:forwards;
+}
+@keyframes nextone2{
+  100%{
+    transform: translateX(-500%);
+  }
+}
+
+/*for last steps*/
+
+.last1step{
+  animation:finaling 0.8s linear;
+  transform:translateX(476%);
+  animation-fill-mode:forwards;
+}
+@keyframes finaling{
+  100%{
+    transform: translateX(348%);
+  }
+}
+
+.last2step{
+  animation:finals4 0.8s linear;
+  transform:translateX(350%);
+  animation-fill-mode:forwards;
+}
+@keyframes finals4{
+  100%{
+    transform: translateX(225%);
+  }
+}
+
+.last3step{
+  animation:nextsecond 0.8s linear;
+  transform:translateX(225%);
+  animation-fill-mode:forwards;
+}
+@keyframes nextsecond{
+  100%{
+    transform: translateX(125%);
+  }
+}
+
+.last4step{
+  animation:nextone3 0.8s linear;
+  transform:translateX(125%);
+  animation-fill-mode:forwards;
+}
+@keyframes nextone3{
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
+/*back css*/
+.backmove{
+  animation: backmoves 1s ease-out;
+}
+ @keyframes backmoves{
+  100%{
+    transform:translateX(0);
+  }
+ }
+
+
+
+
+
